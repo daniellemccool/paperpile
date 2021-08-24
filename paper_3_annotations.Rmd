@@ -1,0 +1,31 @@
+---
+title: "Paper 3 Annotations"
+author: "Danielle McCool"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::downcute:
+    code_folding: show
+    self_contained: true
+    thumbnails: false
+    lightbox: true
+---
+
+```{r echo=FALSE, results='asis'}
+library(jsonlite)
+cur <- getwd()
+setwd(dir = "json")
+files <- dir(pattern = ".json")
+json <- lapply(files, fromJSON)
+rmd <- data.frame(files, header="", comments="")
+for (i in seq_along(files)) {
+  rmd[i, "header"] <- paste0("## ", files[i])
+  rmd[i, "comments"] <- paste0("> ", json[[i]]$Text, collapse = "\n")
+  cat(rmd[i, "header"], "\n\n")
+  cat(rmd[i, "comments"], "\n\n")
+}
+
+
+setwd(cur)
+```
+
+

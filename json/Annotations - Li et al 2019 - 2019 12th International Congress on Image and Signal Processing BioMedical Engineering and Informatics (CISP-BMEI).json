@@ -1,0 +1,62 @@
+[
+  {
+    "Subtype": "Comment",
+    "PageNumber": 1,
+    "VerticalPosition": 657,
+    "Text": "uses a kernel method to interpolate short gaps in trajectories from both sides to the middle of the gap and runs it multiple times in order to allow the newly predicted points to impact the model. doesn't work well where transitions are not smooth. uses down sampling of the points",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628589820000,
+    "Color": "#eb749d",
+    "id": "882f2470-b8f6-4254-9b2c-01d24441bb32"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "when the number of missing data points is large, the extrapolation accuracy of the ARMA model is limited, and the compensation accuracy of the spline function is affected by the number of nodes and the boundary points, and the interpolation precision is also not high. Therefore, this paper proposes a trajectory missing data interpolation method based on bidirectional unequal interval kernel adaptive filtering.",
+    "PageNumber": 1,
+    "VerticalPosition": 449.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629819431000,
+    "Color": "#f9e196",
+    "id": "25dc0b50-04f1-11ec-8723-171bb864a40a"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The kernel adaptive filter is essentially an adaptive filtering method that maps training samples to high-dimensional feature spaces and uses kernel methods in the mapping process",
+    "PageNumber": 2,
+    "VerticalPosition": 736.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629819450000,
+    "Color": "#f9e196",
+    "id": "31a48de0-04f1-11ec-8723-171bb864a40a"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The basic idea of the bidirectional prediction method is that the pair of the training samples is formed by the measured data before and after the missing data segment for the kernel adaptive filter. Point-by-point prediction of missing data from forward and reverse is performed using two kernel adaptive filters. In this way, no matter from the forward prediction or the backward prediction, the time span of the missing data is half of the entire missing data segment, so the accuracy of the predicted data point can be greatly improved.",
+    "PageNumber": 3,
+    "VerticalPosition": 541,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629819468000,
+    "Color": "#f9e196",
+    "id": "3c1aedf0-04f1-11ec-8723-171bb864a40a"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "If the sample points with redundant information are down-sampling, the time interval of one step prediction can be lengthened. Let the down-sampling time is k , then the output of the prediction data point is ikt+Δ . Through the down-sampling operation, the predicted time can be lengthened to compensate for the problem of reduced accuracy of the filtered prediction output data.",
+    "PageNumber": 4,
+    "VerticalPosition": 717.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629819482000,
+    "Color": "#f9e196",
+    "id": "449e3090-04f1-11ec-8723-171bb864a40a"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "if the vehicle target has a significant acceleration or deceleration change in the missing data segment, causing the externally lost segment data to appear discontinuous, the performance of the filtered prediction interpolation method needs further verification.",
+    "PageNumber": 5,
+    "VerticalPosition": 706.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629819494000,
+    "Color": "#f9e196",
+    "id": "4b7ee6c0-04f1-11ec-8723-171bb864a40a"
+  }
+]
