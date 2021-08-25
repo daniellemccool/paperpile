@@ -1,0 +1,121 @@
+[
+  {
+    "Subtype": "Comment",
+    "PageNumber": 2,
+    "VerticalPosition": 771.1,
+    "Text": "paper gives a method for what is effectively stay point detection using CDR but importantly points out that the mobility measures are dependent on the sort of preprocessing done and the parameters selected for e.g. distance and time",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628591521000,
+    "Color": "#eb749d",
+    "id": "c7290637-8b0a-4080-b4ac-393af2d235b2"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "choice of preprocessing methods could lead to changes in the data characteristics",
+    "PageNumber": 2,
+    "VerticalPosition": 431.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590251000,
+    "Color": "#f9e196",
+    "id": "3b210da2-a2ba-43b3-b779-35959d3280be"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The number of records of a trajectory vary nota- bly from each other, with mean and median values of 59.3 and 41.0, respectively (Figure 1A). The interevent time, measured as the duration between two consecutive records in a trajectory, ranges from a few seconds to several hours (F",
+    "PageNumber": 6,
+    "VerticalPosition": 399.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590497000,
+    "Color": "#f9e196",
+    "id": "7474ab96-f7dc-4196-b5bd-fb8f32eea6fd"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The two-stage clustering and time window–based methods are frequently used in existing studies to tackle location uncertainty issues in mobile phone data.",
+    "PageNumber": 7,
+    "VerticalPosition": 391.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590548000,
+    "Color": "#f9e196",
+    "id": "875b4fe8-cebe-40bf-9aef-c07dd4472659"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "the two- stage clustering method is primarily used to generalize users’ documented locations to derive their represen- tative locations (e.g., stay locations). The time win- dow–based method focuses explicitly on detecting and removing oscillations in the data.",
+    "PageNumber": 7,
+    "VerticalPosition": 235,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590575000,
+    "Color": "#f9e196",
+    "id": "c11ac07a-dcb3-4c1a-9bbf-de4902d18b83"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "in the first stage, we com- pare each observation with the subsequent one and merge them into a segment if they fall within a roaming distance of Dd1: We use the medoid of these observations—defined as the most visited cell in that segment—as its representative location. The representative location is then compared with the next observation, which will be merged into the same segment if they (representative location of the segment and the observation) fall within Dd1: The representative location of the segment will be updated as more observations are added. The clustering process will terminate until all seg- ments are identified. This results in a sequence fðl0 1 0 1, t0 1 0 1, dur1Þ,ðl0 2 0 2, t0 2 0 2, dur2Þ, :::,ðl0 n 0 n, t0 n 0 n, durnÞg where l0 i 0 i, t0 i 0 i, and duri denote the medoid, starting time, and the stay duration of the ith segment, respectively",
+    "PageNumber": 8,
+    "VerticalPosition": 415.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590703000,
+    "Color": "#f9e196",
+    "id": "52ef7896-9d5c-44bb-b4d5-efecc8845e27"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "By imposing a moving window with a fixed length (e.g., 5 minutes), the method aims to detect circular events—subsequences in a trajectory that start and end at the same cell—and identify those within the time window as oscillations",
+    "PageNumber": 8,
+    "VerticalPosition": 404.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590747000,
+    "Color": "#f9e196",
+    "id": "03110c51-7e2b-4a62-99e5-66dbd93b0df6"
+  },
+  {
+    "Subtype": "Ink",
+    "PageNumber": 9,
+    "VerticalPosition": 754.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628590789000,
+    "Color": "#000000",
+    "id": "b8acf9eb-9eb3-4107-9143-fa0bb5fbcc96"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The result suggests that the way the oscillations are tackled in the mobile signaling data could have a notable impact on the estimation of OD trips.",
+    "PageNumber": 17,
+    "VerticalPosition": 276.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628591036000,
+    "Color": "#f9e196",
+    "id": "2015fcb8-b5c8-4630-8f20-ebff4c22218c"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "this mobility indicator than performing the time window–based method, given that the latter is more or less a downsampling pro- cess of mobile phone trajectories. The result indicates that by ignoring structural prop- erties of oscillations in a trajectory, the estimation of total stay time can be off by several hours or even longer",
+    "PageNumber": 17,
+    "VerticalPosition": 342.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628591087000,
+    "Color": "#f9e196",
+    "id": "e73613f7-a797-4e5d-8314-38aa012f44ed"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Our results demonstrate that the choice of data prepro- cessing methods could lead to changes in the data characteristics. Such changes, which are nontrivial, will further affect the characterization of human mobility patterns.",
+    "PageNumber": 18,
+    "VerticalPosition": 345.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628591127000,
+    "Color": "#f9e196",
+    "id": "136e68c7-dee2-4cf6-8003-cbe742744631"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "that cell tower oscillations tend to be more pronounced in densely populated areas. Ignoring the uncertainty issues in the mobile phone data will have a larger impact on these areas, where decision making on urban design and manage- ment is frequently needed",
+    "PageNumber": 20,
+    "VerticalPosition": 262.3,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628591190000,
+    "Color": "#f9e196",
+    "id": "2d13e79c-412e-4547-85ef-01c8edc31f70"
+  }
+]

@@ -3,29 +3,57 @@ title: "Paper 3 Annotations"
 author: "Danielle McCool"
 date: "`r Sys.Date()`"
 output:
-  rmdformats::downcute:
+  rmdformats::robobook:
     code_folding: show
     self_contained: true
     thumbnails: false
     lightbox: true
 ---
 
-```{r echo=FALSE, results='asis'}
-library(jsonlite)
-cur <- getwd()
-setwd(dir = "json")
-files <- dir(pattern = ".json")
-json <- lapply(files, fromJSON)
-rmd <- data.frame(files, header="", comments="")
-for (i in seq_along(files)) {
-  rmd[i, "header"] <- paste0("## ", files[i])
-  rmd[i, "comments"] <- paste0("> ", json[[i]]$Text, collapse = "\n")
-  cat(rmd[i, "header"], "\n\n")
-  cat(rmd[i, "comments"], "\n\n")
+```{css echo=FALSE}
+.highlight {
+  position: relative;
+  padding: 10px 10px 10px 45px !important;
+  border-left-width: 5px !important;
+  border-left-style: solid !important;
+  border-radius: 5px !important;
+  background-color: #f7f7f7 !important;
 }
 
 
-setwd(cur)
+.highlight::before {
+  position: absolute;
+  content: attr(pagenum);
+  font-size: 1em;
+  margin-left: -2.5em;
+  font-style: normal;
+  color: black;
+}
+
+.comment {
+  padding: 10px 45px 10px 45px !important;
+  border-left-width: 10px !important;
+  background-color: white !important;
+  font-style: normal !important;
+  border-radius: 10px !important;
+}
+
+```
+
+```{r setup, echo=FALSE, warning=FALSE}
+library(knitr)
+source("json_parser.R")
+
+```
+
+```{r echo=FALSE, results='asis', warning=FALSE}
+# for (paper in seq_along(json)) {
+#   layoutPaper(json[paper])
+# }
+layoutPaper(json[1])
+layoutPaper(json[2])
+layoutPaper(json[3])
+
 ```
 
 
