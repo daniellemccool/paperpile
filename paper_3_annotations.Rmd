@@ -56,5 +56,5 @@ json <- readJsonPaperpile()
 layoutPapersInHTML(json)
 ```
 
-## Bibliography
+## References
 
