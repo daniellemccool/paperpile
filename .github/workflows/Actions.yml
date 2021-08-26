@@ -5,6 +5,8 @@ jobs:
   deploy-web:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
     - name: Push build to daniellemccool.github.io
       uses: nkoppel/push-files-to-another-repository@v1.1.0
       env:
