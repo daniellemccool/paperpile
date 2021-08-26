@@ -32,7 +32,7 @@ extractMetadataFromFilename <- function(filename){
       year,
        pubTitle)
 }
-readJsonPaperpile <- function(dir = "json", md = FALSE){
+readJsonPaperpile <- function(dir = "json", md = FALSE, bibloc = "references.bib"){
   cur <- getwd()
   setwd(dir = "json")
   filenames <- dir(pattern = ".json")
@@ -48,12 +48,15 @@ readJsonPaperpile <- function(dir = "json", md = FALSE){
   
   if (isTRUE(md)) {
     source("md_parser.R")
-    md <- extractTitlesFromMds()
+    md <- extractTitlesFromMds(bibloc = bibloc)
     pubTitles <- sapply(json, `[[`, "sharedfilename")
     df <- lookForArticleTitles(pubTitles, md)
     matchedTitles <- df[match(pubTitles, df[, "sourceTitle"]), "articleTitle"]
+    matchedKeys   <- df[match(pubTitles, df[, "sourceTitle"]), "citekey"]
+    
     for (i in seq_along(json)) {
       json[[i]][["articleTitle"]] <- matchedTitles[i]
+      json[[i]][["citekey"]] <- matchedKeys[i]
     }
   }
   json
@@ -118,12 +121,14 @@ layoutPapersInHTML <- function(jsonList){
 
 buildMarkdownHeader <- function(jsonPaper){
   title <- jsonPaper$pubTitle
-  if(!is.na(jsonPaper$articleTitle)) title <- jsonPaper$articleTitle
+  if(isTRUE(!is.na(jsonPaper$articleTitle))) {
+    title <- jsonPaper$articleTitle
+    citekey <- jsonPaper$citekey
+    return(sprintf("## %s - @%s", title, citekey))
+  }
   
   sprintf("## %s (%s) - %s", jsonPaper$author, jsonPaper$year, title)
 }
-
-
 
 # generateSvgBox <- function(color) {
 #   sprintf(
