@@ -1,0 +1,342 @@
+[
+  {
+    "Subtype": "Comment",
+    "PageNumber": 1,
+    "VerticalPosition": 493.4,
+    "Text": "really important paper, may be one method of solving long gaps in paper 3. they use tensors on repeated data, so this is a way of integrating the repeatability of human mobility into the mix.",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628607098000,
+    "Color": "#eb749d",
+    "id": "8062a7e3-83b7-45c1-a088-3b7e2f47fcf1"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "\"Call Detail Records (CDR) are the current de-facto standard for mobile phone data used in human mobility studies.\"\n Call detail records are much more sparse than the data that we collect but are more reliably collected --they have few missing data themselves but rather they are imperfect annotations of the underlying movement behavior that itself must be interpreted.",
+    "PageNumber": 1,
+    "VerticalPosition": 125.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1594650348000,
+    "Color": "#f9e196",
+    "id": "befbc410-c514-11ea-8097-e919b5c2f760"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "e introduce our novel approach, CTR, which leverages well-known features of human mobility to customize tensor factorization ",
+    "PageNumber": 3,
+    "VerticalPosition": 576.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605161000,
+    "Color": "#f9e196",
+    "id": "4f0a8395-2986-4198-b436-ab36c90c5a2c"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "it is performed at quite different temporal res- olutions by works in the literature, spanning from 15 minutes [14] to 1 hour [3, 4], or even",
+    "PageNumber": 3,
+    "VerticalPosition": 81.3,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605232000,
+    "Color": "#f9e196",
+    "id": "6d9f040c-6cb9-44ef-92c4-8f7eccd5eb20"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Indeed, when extensive knowledge of the user mobility is required by the nature of the investigation, the straightforward way to deal with incomplete trajectory data is that of filtering users so as to exclude from the analysis those with insufficient location information. This is typically performed by imposing thresholds on the amount of mobility data available in CDR, though there is hardly a standard to define them. As a reference, several important works opt for a choice of users who have a minimum average sampling frequency of 0.5 events per hour, and who are observed at two unique locations at least [3, 4, 14]. User filtering comes with a cost in terms of below-threshold users that are excluded from the analysis. Unfortunately, in practical cases involving CDR datasets, even the loose requirements set by the thresholds mentioned above risk to lead to severe reductions in the examined user population. For instance, two very well-known studies analyze just 1.67% [3] and 0.45% [4] of the total subscribers available in their datasets upon filtering, leaving substantial richness in the original data untapped.",
+    "PageNumber": 4,
+    "VerticalPosition": 534.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605295000,
+    "Color": "#f9e196",
+    "id": "9d8f06e3-37ff-472f-9576-acaf574fd819"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "by assuming that users do not move for some periods (e.g., in the order of hours) before and after every recorded event in the CDR dataset",
+    "PageNumber": 4,
+    "VerticalPosition": 208.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605354000,
+    "Color": "#f9e196",
+    "id": "0845fca2-833f-4090-8f9e-a831e1f7b8df"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "17]. A different strategy hinges on probabilistic reconstruction, implemented by modeling positions between two CDR events as random variables",
+    "PageNumber": 4,
+    "VerticalPosition": 152.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605365000,
+    "Color": "#f9e196",
+    "id": "481ff8a1-e07c-4ba4-9607-bbde9034e962"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "We first quantify the amount of missing information in the individual trajectories. To this end, we assume a total observation time T and discretize it into time intervals of duration τ , which we will refer to as the temporal resolution.We define the completeness of a specific trajectory as the fraction of time intervals for which we have at least one location sample. As an example, let us assume that T = 7 days and the temporal resolution is τ = 1 hour: then, a trajectory with locations in 80 different hours has a completeness of 80/(7 × 24) = 0.476",
+    "PageNumber": 5,
+    "VerticalPosition": 311.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605476000,
+    "Color": "#f9e196",
+    "id": "03903db7-6401-4f88-b5a1-f0417f6a5b6f"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Table 2 summarizes the results. Goodness-of-fit tests consistently point at either of two distributions, i.e., Weibull and lognormal, depending on the combination of system pa- rameters.",
+    "PageNumber": 7,
+    "VerticalPosition": 95.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605667000,
+    "Color": "#f9e196",
+    "id": "702036cb-2541-4b51-b1e0-f979bce7d9e0"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The PDF of the Weibull distribution is expressed as fWeibull(x) = k λ k λ ( x λ x λ )k–1e–(x/λ)k . Plots (b) and (c) of Fig. 3 show that the estimated Weibull parameters k and λ scale linearly (Pearson correlation coefficients of 0.89 and 0.98, respectively) with the most important system",
+    "PageNumber": 8,
+    "VerticalPosition": 99.3,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605713000,
+    "Color": "#f9e196",
+    "id": "c684cdce-4a9f-4202-9372-0507ab9eb00a"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "parameter, τ . Also, the observation time T introduces an offset to the linear relationship. We thus model k ˆ k ˆ = [τ × (4.569 – 0.01037T ) + 1086.5 – 1.14515T ] × 10–3 and λˆ = [τ × (1.814 – 0.00379T ) + 26.23 – 0.07659T ] × 10–3, and the CDF of CDR-based trajectory completeness as fWeibull(x; k k ˆ , λˆ).",
+    "PageNumber": 9,
+    "VerticalPosition": 704.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605738000,
+    "Color": "#f9e196",
+    "id": "7b3e4db3-d722-4d1a-a096-2fe549a96af4"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "oscillations",
+    "PageNumber": 9,
+    "VerticalPosition": 341.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605809000,
+    "Color": "#f9e196",
+    "id": "8c52692d-e8e2-4adb-b8a4-d8004d5f7a93"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "We define the observed trajectory of non-null locations as LΩ = {li | i ∈ Ω}; this is the user mobility information that can be derived from the mobile phone data.",
+    "PageNumber": 9,
+    "VerticalPosition": 255.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605833000,
+    "Color": "#f9e196",
+    "id": "a816ee99-e5ce-4645-b6a3-3225864fe52e"
+  },
+  {
+    "Subtype": "Underline",
+    "MarkupText": "Prevalence of static phases. ",
+    "PageNumber": 10,
+    "VerticalPosition": 417.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605904000,
+    "Color": "#fed144",
+    "id": "f669b0a0-2502-47ee-8db7-812903b01d82"
+  },
+  {
+    "Subtype": "Underline",
+    "MarkupText": "Overnight invariance. ",
+    "PageNumber": 10,
+    "VerticalPosition": 249.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605912000,
+    "Color": "#fed144",
+    "id": "4763fd12-32e4-4c8d-9140-9addef4951bc"
+  },
+  {
+    "Subtype": "Underline",
+    "MarkupText": "Regularity of movement. ",
+    "PageNumber": 10,
+    "VerticalPosition": 123.3,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605925000,
+    "Color": "#fed144",
+    "id": "d664897b-3c6d-4d63-984d-d694ca14185e"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The first step in CTR aims at reconstructing missing portions of a trajectory during the night hours",
+    "PageNumber": 11,
+    "VerticalPosition": 427,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628605986000,
+    "Color": "#f9e196",
+    "id": "d35f880c-0baa-43d6-8448-5afdeba37ab1"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "We first identify the most frequent location visited by the user during nighttime, which we name ˆlH . Then, we verify that ˆlH accounts for a conservative 80% (or more) of the po- sitions of the user during the night period. If this is not the case, we deem that the result is not consistent enough to establish with high confidence the actual home location of the user, and we skip the nighttime trajectory reconstruction step",
+    "PageNumber": 11,
+    "VerticalPosition": 311.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606026000,
+    "Color": "#f9e196",
+    "id": "59e7e8df-aa4b-44c5-966d-08d2872a5575"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "location tensor of a user X . A trajectory LT is represented as daily and weekly combinations of one-day sub-trajectories",
+    "PageNumber": 12,
+    "VerticalPosition": 558.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606114000,
+    "Color": "#f9e196",
+    "id": "8a474533-7f82-4d21-b489-94521cd94665"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Tensor factorization exploits redundancy to recover missing data; in our context, redundancy is created by the regularity of human movement, which creates repeated pat- terns of visited locations over the many days and weeks covered by a CDR dataset, as discussed in Sect. 4.2.",
+    "PageNumber": 12,
+    "VerticalPosition": 465.9,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606140000,
+    "Color": "#f9e196",
+    "id": "6dd23910-a0a1-40b0-ae0e-0faef437ace2"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "First, the trajectory is split into multiple one-day sub-trajectories. Each one-day sub-trajectory is then converted into a one-dimensional vector: for instance, the sub-trajectory of the jth day of the ith week is denoted by xi,j and satisfies xi,j = (l(x) ni,j (x) ni,j,1 ,l(y) ni,j (y) ni,j,1 ,...,l(x) ni,j (x) ni,j,Nτ ,l(y) ni,j (y) ni,j,Nτ ) ∈ R2Nτ , where l(x) k (x) k and l(y) k (y) k are the two coordinates that identify the location at time step k, for lk = (l(x) k (x) k ,l(y) k (y) k ). • Second, we enter all of the one-day sub-trajectories of a user trajectory into the location tensor by organizing them into a matrix of one-day sub-trajectories for all Nw weeks in the observation period T , i.e., X = [xi,j]Nw×Nd = {Xi,j,k}Nw×Nd×2Nτ ",
+    "PageNumber": 12,
+    "VerticalPosition": 323.9,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606170000,
+    "Color": "#f9e196",
+    "id": "3ed93ee7-8fab-4d42-9e67-65e3dbbf78f3"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "decomposes the tensor into hyper-parameters and then uses them to infer missing value",
+    "PageNumber": 12,
+    "VerticalPosition": 109.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606193000,
+    "Color": "#f9e196",
+    "id": "f8fdff0e-e548-46bd-accb-eeb4c421d056"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Indeed, (i) daily periodicities tend to stronger than weekly ones [3], and (ii) consecutive time slots, hence nearby values in same one-day sub-trajectory vector, show a strong correlation in terms of locations of t user [18] [18]. In the light of these considerations, we customize the TF problem for locati inference, by introducing two additional elements to the optimization problem in",
+    "PageNumber": 13,
+    "VerticalPosition": 404.9,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606282000,
+    "Color": "#f9e196",
+    "id": "1f6ec9b9-fe5b-400d-a916-9c017fab1438"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The first element emphasizes daily repetitive mobility patterns by means of Toepli matrices. Toeplitz matrices allow modelling relationships between specific elements the location tensor.",
+    "PageNumber": 13,
+    "VerticalPosition": 330.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606291000,
+    "Color": "#f9e196",
+    "id": "5428c38d-ec80-4ff0-927e-89426a0cd0eb"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "towers. Instead, the solution of the enha ed TF problem in (4) returns locations whose coordinates are real values, which may no match the position of actual cellular towers.",
+    "PageNumber": 14,
+    "VerticalPosition": 165.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606358000,
+    "Color": "#f9e196",
+    "id": "307fac47-ec4d-4aae-b097-a742e3d3bbfc"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "We remark that the available fine-grained ground-truth trajectories bound our validation to a two-week period. We",
+    "PageNumber": 16,
+    "VerticalPosition": 604.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606443000,
+    "Color": "#f9e196",
+    "id": "e72966e8-88a2-4193-b451-582800246b8c"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "We en- sure that the incomplete trajectories mimic the temporal sampling properties of those extracted from CDR as follows: (i) we construct an empirical distribution of the probabil- ity that events are recorded at each time slots, based on CDR data of all 1.8 million users in our dataset; (ii) we set the desired completeness value k that shall characterize the out- put incomplete trajectory; (iii) we retain a fraction k of the overall location samples in one complete trajectory according to a random selection of time slots that follows the empirical distribution above",
+    "PageNumber": 16,
+    "VerticalPosition": 448.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606480000,
+    "Color": "#f9e196",
+    "id": "2dabd62d-4586-40d3-8e58-3c3e4f02528b"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "performance metric we adopt is cell displacement, which expresses the MAE used in (1) in terms of mobile network cells",
+    "PageNumber": 16,
+    "VerticalPosition": 165.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606535000,
+    "Color": "#f9e196",
+    "id": "4ffaf9af-0741-49a2-beea-e24ae140cb0d"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The level of reconstruction accuracy achieved by CTR is acceptable for metropolitan- scale analyses",
+    "PageNumber": 17,
+    "VerticalPosition": 167.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606587000,
+    "Color": "#f9e196",
+    "id": "e82c5c28-afa7-4179-967b-952fe63fa1a0"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "As a preliminary result in their analysis, Gonzalez et al. find that the travel distances and radiuses of gyration aggregated over the whole user population follow truncated power laws (x + x0)–β e–x/k . We confirm that this is also the case under complete trajectory data, as shown in the top plots of Fig. 9. The exponent values are also consistent, as Gonzalez et al. find βr = 1.77 and βrg = 1.65, whereas βr = 1.78 and βrg = 1.68 from our complete trajectory data. However, we remark a sensible difference in the cutoff values. Travel distances can be sensibly higher in complete data; also, krg is at 400 km in [3], which is not far from the 340 km from our original",
+    "PageNumber": 18,
+    "VerticalPosition": 166.3,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606691000,
+    "Color": "#f9e196",
+    "id": "00b7c846-b14d-45b3-a51c-838924540845"
+  },
+  {
+    "Subtype": "Comment",
+    "PageNumber": 19,
+    "VerticalPosition": 340.9,
+    "Text": "also probably holds for long gap missing data in our study",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606776000,
+    "Color": "#77c0f7",
+    "id": "07f12c9c-8375-44fc-b62c-477f6dd04748"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "trips. Our conclusion is that, CDR data sparsity risks to both underestimate long trips, and overestimate the region within which the Lévy flight behavior of human mobility occurs.",
+    "PageNumber": 19,
+    "VerticalPosition": 304.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606729000,
+    "Color": "#f9e196",
+    "id": "dbc1faa3-554e-4437-ae07-9227c6dfab85"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "that the extremely high uniqueness identified by De Montjoye et al. is mainly caused by the diverse temporal patterns of the mobile communications of each user, rather than by his/her dis- tinctive mobility. ",
+    "PageNumber": 20,
+    "VerticalPosition": 255.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606897000,
+    "Color": "#f9e196",
+    "id": "6e1389db-2b7e-4e80-b91e-37cb90b6153e"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The mean predictability is at 81%, which is high yet quite far from the 93% found by Song et al",
+    "PageNumber": 21,
+    "VerticalPosition": 278.9,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628606955000,
+    "Color": "#f9e196",
+    "id": "3de48703-8c05-4ba8-a5ff-662d165b38cf"
+  }
+]

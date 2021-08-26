@@ -2,6 +2,8 @@
 title: "Paper 3 Annotations"
 author: "Danielle McCool"
 date: "`r Sys.Date()`"
+bibliography: paperpile_paper3.bib
+nocite: '@*'
 output:
   rmdformats::robobook:
     code_folding: show
@@ -38,22 +40,21 @@ output:
   border-radius: 10px !important;
 }
 
+.csl-entry {
+  margin-block-end: 20px;
+}
+
 ```
 
 ```{r setup, echo=FALSE, warning=FALSE}
 library(knitr)
 source("json_parser.R")
-
 ```
 
 ```{r echo=FALSE, results='asis', warning=FALSE}
-# for (paper in seq_along(json)) {
-#   layoutPaper(json[paper])
-# }
-layoutPaper(json[1])
-layoutPaper(json[2])
-layoutPaper(json[3])
-
+json <- readJsonPaperpile()
+layoutPapersInHTML(json)
 ```
 
+## References
 

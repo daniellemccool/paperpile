@@ -1,0 +1,112 @@
+[
+  {
+    "Subtype": "Comment",
+    "PageNumber": 1,
+    "VerticalPosition": 390.6,
+    "Text": "this is about using map matching from users own historic trajectories in order to fill long gaps. probably going to be one of my primary references in doing that. kinda hard to follow though",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628694501000,
+    "Color": "#eb749d",
+    "PageLabel": "316",
+    "id": "31d3a421-5d8c-4d24-9c34-54a73236f848"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "positioning errors could be larger than 2.5 m even with high-precision GPS devices (e.g., u- blox GPS modules). The missing observations, caused by the discontinuity and errors of the data, incur uncertainties and make the ). The missing observations, caused by the discontinuity and errors of the data, incur uncertainties and make the high-frequency trajectories cannot be directly used to observe individual location-duration-path choices. Methods to solve these gh-frequency trajectories cannot be directly used to observe individual location-duration-path choices. Methods to solve these uncertainties are data-driven models including machine learning and Distributionally Robust Optimization (DRO) models (e.g., DRO g machine learning and Distributionally Robust Optimization (DRO) models (e.g., DRO with moment bounds and DRO with likelihood bounds).",
+    "PageNumber": 2,
+    "VerticalPosition": 532.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693580000,
+    "Color": "#f9e196",
+    "PageLabel": "317",
+    "id": "388d547a-91a8-4ab0-a7be-8bc5b6f19688"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "In this paper, we apply the DRO models with likelihood bounds in a data-driven optimization modeling framework to reconstruct paper, we apply the DRO models with likelihood bounds in a data-driven optimization modeling framework to reconstruct the missing location-duration-path choices using high-frequency trajectory data over many days. The raw trajectory data will be first g location-duration-path choices using high-frequency trajectory data over many days. The raw trajectory data will be first processed by a map-matching model to observe historical choices of location-duration-path. Furthermore, we can identify the missing processed by a map-matching model to observe historical choices of location-duration-path. Furthermore, we can identify the missing observations in space and time dimensions from the map-matched results. For the missing observations, we then apply data-driven pace and time dimensions from the map-matched results. For the missing observations, we then apply data-driven network-time prisms to reduce the search spaces for the potential location-duration-path choices. In the reduced search spaces, we prisms to reduce the search spaces for the potential location-duration-path choices. In the reduced search spaces, we formulate the DRO models with likelihood bounds to reconstruct the missing choices.",
+    "PageNumber": 3,
+    "VerticalPosition": 668.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693626000,
+    "Color": "#f9e196",
+    "PageLabel": "318",
+    "id": "d73e2605-3d2e-40fa-8957-ac5dd0c631d5"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "prisms (Fig. 1(b)) to reduce the search spaces for the estimation of missing location-duration-path choices. For each individual, we can identify a network-time prism as a reduced space of potential location-duration-path choices for , we can identify a network-time prism as a reduced space of potential location-duration-path choices for a missing period. Then, two DRO models with likelihood bounds are applied to reconstruct the location-duration-path choices for the g period. Then, two DRO models with likelihood bounds are applied to reconstruct the location-duration-path choices for the missing observations. Fin",
+    "PageNumber": 3,
+    "VerticalPosition": 82.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693715000,
+    "Color": "#f9e196",
+    "PageLabel": "318",
+    "id": "20aab84f-b7aa-4735-862c-9b428f5d8c50"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "the many-day trajectory data, we can solve a map-matching problem to detect the locations/stays and match the paths from y-day trajectory data, we can solve a map-matching problem to detect the locations/stays and match the paths from the observed trajectories for individuals. Based on the map-matched results, we identify a set of all possible location-duration-path jectories for individuals. Based on the map-matched results, we identify a set of all possible location-duration-path choices for the missing observations for each individual.",
+    "PageNumber": 5,
+    "VerticalPosition": 163.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693792000,
+    "Color": "#f9e196",
+    "PageLabel": "320",
+    "id": "e13d9c25-2e7b-4e60-acd7-d82f29db9005"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "; White et al., 2000; Chen et al., 2003; Ochieng et al., 2003; Quddus et al., 2003; Yin and Wolfson, 2004; Meng, 2006; Tang et al., 2016). We use the map-matching model from Tang et al. (2016) to match the observed trajectories to ; Meng, 2006; Tang et al., 2016). We use the map-matching model from Tang et al. (2016) to match the observed trajectories to the ground-truth network.",
+    "PageNumber": 5,
+    "VerticalPosition": 90.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693823000,
+    "Color": "#f9e196",
+    "PageLabel": "320",
+    "id": "7dcb2454-2319-4893-b376-2f95ea4b6d44"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The data-driven network-time prism is an envelope of location-duration choices and path choices for the missing observations. prism is an envelope of location-duration choices and path choices for the missing observations. The classic network-time prism estimates all reachable locations and paths considering constraints of geometry, connectivity, and speed limit geometry, connectivity, and speed limit (Miller, 1991; Tang et al., 2016). Different from the classic network-time prism, a data-driven network-time prism first peed limit (Miller, 1991; Tang et al., 2016). Different from the classic network-time prism, a data-driven network-time prism first defines a search space using the observed link travel time from many-vehicle trajectories over many days.",
+    "PageNumber": 6,
+    "VerticalPosition": 459.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693880000,
+    "Color": "#f9e196",
+    "PageLabel": "321",
+    "id": "c4d6e3da-1f34-4f52-b324-38f63f0436f0"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "the time budget (i.e. the time period of missing observations) for the missing observations from location sto a d ( ) ( ) is the time budget (i.e. the time period of missing observations) for the missing observations from location sto location r.",
+    "PageNumber": 7,
+    "VerticalPosition": 477,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628693948000,
+    "Color": "#f9e196",
+    "PageLabel": "322",
+    "id": "f952d2f9-61fc-4615-84ec-7e36cb275401"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "g records. Based on the calculation of path travel time from the driving records, we have two possible path choices for the inbound trip (i.e., path travel time from the driving records, we have two possible path choices for the inbound trip (i.e., trip index 0 from the observed location r in pair g records, we have two possible path choices for the inbound trip (i.e., trip index 0 from the observed location r in pair ( , ) r s to the missing location) and four possible path choices for the outbound trip p index 0 from the observed location r in pair ( , ) r s to the missing location) and four possible path choices for the outbound trip (i.e., trip index 1 from the missing location to the observed location s in pair ) and four possible path choices for the outbound trip (i.e., trip index 1 from the missing location to the observed location s in pair ( , ) r s ) in Table 3. According to the optimal solution of the (i.e., trip index 1 from the missing location to the observed location s in pair ( , ) r s ) in Table 3. According to the optimal solution of the DRO model, we derive the probabilities for all the possible path choices",
+    "PageNumber": 13,
+    "VerticalPosition": 471.9,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628694184000,
+    "Color": "#f9e196",
+    "PageLabel": "328",
+    "id": "e69b97fd-f45a-446f-be86-f11b1906902d"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "In the future, we can gher confidence level increases the probability value of the missing choice. In the future, we can apply the proposed modeling framework to a joint location-duration-path model to find the most likely location-duration-path pply the proposed modeling framework to a joint location-duration-path model to find the most likely location-duration-path choices simultaneously for the missing observations if we have long-period (e.g. over one year) high-frequency trajectory data.",
+    "PageNumber": 16,
+    "VerticalPosition": 273.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1628694409000,
+    "Color": "#f9e196",
+    "PageLabel": "331",
+    "id": "815e0d9f-ac8d-413d-a9bd-e31bb4f995f5"
+  }
+]

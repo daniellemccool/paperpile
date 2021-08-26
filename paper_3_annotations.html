@@ -7,7 +7,7 @@
 
         <meta name="author" content="Danielle McCool" />
     
-        <meta name="date" content="2021-08-25" />
+        <meta name="date" content="2021-08-26" />
     
     <title>Paper 3 Annotations</title>
 
@@ -124,12 +124,20 @@
           <li class="divider"></li>
         </ul>
         <nav role="navigation" id="toc">
-          
+          <ul>
+          <li><a href="#chen-et-al-2019---epj-data-science">Chen et al 2019 - EPJ Data Science</a></li>
+          <li><a href="#knapen-et-al-2018---transp-res-part-c-emerg-technol">Knapen et al 2018 - Transp Res Part C Emerg Technol</a></li>
+          <li><a href="#li-et-al-2019---2019-12th-international-congress-on-image-and-signal-processing-biomedical-engineering-and-informatics-cisp-bmei">Li et al 2019 - 2019 12th International Congress on Image and Signal Processing BioMedical Engineering and Informatics (CISP-BMEI)</a></li>
+          <li><a href="#tong-et-al-2017---sensors">Tong et al 2017 - Sensors</a></li>
+          <li><a href="#xu-et-al-2021---ann-assoc-am-geogr">Xu et al 2021 - Ann Assoc Am Geogr</a></li>
+          <li><a href="#zhao-and-zhang-2019---transp-res-part-c-emerg-technol">Zhao and Zhang 2019 - Transp Res Part C Emerg Technol</a></li>
+          <li><a href="#references">References</a></li>
+          </ul>
         </nav>
         <ul class="authors">
           <li class="divider"></li>
                                 <li><span><i class="glyphicon glyphicon-user"></i> Danielle McCool</span></li>
-                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2021-08-25</span></li>
+                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2021-08-26</span></li>
                   </ul>     
       </div>
       <div class="book-body fixed">
@@ -185,9 +193,263 @@
   border-radius: 10px !important;
 }
 
+.csl-entry {
+  margin-block-end: 20px;
+}
+
 </style>
-<h2> Li et al 2019 - 2019 12th International Congress on Image and Signal Processing BioMedical Engineering and Informatics (CISP-BMEI)</h2> 
- <h3> Comments </h3> 
+<div id="chen-et-al-2019---epj-data-science" class="section level2">
+<h2>Chen et al 2019 - EPJ Data Science</h2>
+<h3> Comments </h3> 
+ <blockquote class="comment" style="border-left-color: #eb749d;">
+            really important paper, may be one method of solving long gaps in paper 3. they use tensors on repeated data, so this is a way of integrating the repeatability of human mobility into the mix.
+    </blockquote>
+<blockquote class="comment" style="border-left-color: #77c0f7;">
+            also probably holds for long gap missing data in our study
+    </blockquote> <h3> Direct quotes </h3> 
+ <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p1]">
+            &quot;Call Detail Records (CDR) are the current de-facto standard for mobile phone data used in human mobility studies.&quot;
+ Call detail records are much more sparse than the data that we collect but are more reliably collected --they have few missing data themselves but rather they are imperfect annotations of the underlying movement behavior that itself must be interpreted.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            e introduce our novel approach, CTR, which leverages well-known features of human mobility to customize tensor factorization 
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            it is performed at quite different temporal res- olutions by works in the literature, spanning from 15 minutes [14] to 1 hour [3, 4], or even
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            Indeed, when extensive knowledge of the user mobility is required by the nature of the investigation, the straightforward way to deal with incomplete trajectory data is that of filtering users so as to exclude from the analysis those with insufficient location information. This is typically performed by imposing thresholds on the amount of mobility data available in CDR, though there is hardly a standard to define them. As a reference, several important works opt for a choice of users who have a minimum average sampling frequency of 0.5 events per hour, and who are observed at two unique locations at least [3, 4, 14]. User filtering comes with a cost in terms of below-threshold users that are excluded from the analysis. Unfortunately, in practical cases involving CDR datasets, even the loose requirements set by the thresholds mentioned above risk to lead to severe reductions in the examined user population. For instance, two very well-known studies analyze just 1.67% [3] and 0.45% [4] of the total subscribers available in their datasets upon filtering, leaving substantial richness in the original data untapped.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            by assuming that users do not move for some periods (e.g., in the order of hours) before and after every recorded event in the CDR dataset
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            17]. A different strategy hinges on probabilistic reconstruction, implemented by modeling positions between two CDR events as random variables
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            We first quantify the amount of missing information in the individual trajectories. To this end, we assume a total observation time T and discretize it into time intervals of duration t , which we will refer to as the temporal resolution.We define the completeness of a specific trajectory as the fraction of time intervals for which we have at least one location sample. As an example, let us assume that T = 7 days and the temporal resolution is t = 1 hour: then, a trajectory with locations in 80 different hours has a completeness of 80/(7 × 24) = 0.476
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
+            Table 2 summarizes the results. Goodness-of-fit tests consistently point at either of two distributions, i.e., Weibull and lognormal, depending on the combination of system pa- rameters.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p8]">
+            The PDF of the Weibull distribution is expressed as fWeibull(x) = k <U+03BB> k <U+03BB> ( x <U+03BB> x <U+03BB> )k–1e–(x/<U+03BB>)k . Plots (b) and (c) of Fig. 3 show that the estimated Weibull parameters k and <U+03BB> scale linearly (Pearson correlation coefficients of 0.89 and 0.98, respectively) with the most important system
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p9]">
+            parameter, t . Also, the observation time T introduces an offset to the linear relationship. We thus model k ˆ k ˆ = [t × (4.569 – 0.01037T ) + 1086.5 – 1.14515T ] × 10–3 and <U+03BB>ˆ = [t × (1.814 – 0.00379T ) + 26.23 – 0.07659T ] × 10–3, and the CDF of CDR-based trajectory completeness as fWeibull(x; k k ˆ , <U+03BB>ˆ).
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p9]">
+            oscillations
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p9]">
+            We define the observed trajectory of non-null locations as LO = {li | i <U+2208> O}; this is the user mobility information that can be derived from the mobile phone data.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p11]">
+            The first step in CTR aims at reconstructing missing portions of a trajectory during the night hours
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p11]">
+            We first identify the most frequent location visited by the user during nighttime, which we name ˆlH . Then, we verify that ˆlH accounts for a conservative 80% (or more) of the po- sitions of the user during the night period. If this is not the case, we deem that the result is not consistent enough to establish with high confidence the actual home location of the user, and we skip the nighttime trajectory reconstruction step
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p12]">
+            location tensor of a user X . A trajectory LT is represented as daily and weekly combinations of one-day sub-trajectories
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p12]">
+            Tensor factorization exploits redundancy to recover missing data; in our context, redundancy is created by the regularity of human movement, which creates repeated pat- terns of visited locations over the many days and weeks covered by a CDR dataset, as discussed in Sect. 4.2.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p12]">
+            First, the trajectory is split into multiple one-day sub-trajectories. Each one-day sub-trajectory is then converted into a one-dimensional vector: for instance, the sub-trajectory of the jth day of the ith week is denoted by xi,j and satisfies xi,j = (l(x) ni,j (x) ni,j,1 ,l(y) ni,j (y) ni,j,1 ,...,l(x) ni,j (x) ni,j,Nt ,l(y) ni,j (y) ni,j,Nt ) <U+2208> R2Nt , where l(x) k (x) k and l(y) k (y) k are the two coordinates that identify the location at time step k, for lk = (l(x) k (x) k ,l(y) k (y) k ). • Second, we enter all of the one-day sub-trajectories of a user trajectory into the location tensor by organizing them into a matrix of one-day sub-trajectories for all Nw weeks in the observation period T , i.e., X = [xi,j]Nw×Nd = {Xi,j,k}Nw×Nd×2Nt 
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p12]">
+            decomposes the tensor into hyper-parameters and then uses them to infer missing value
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p13]">
+            Indeed, (i) daily periodicities tend to stronger than weekly ones [3], and (ii) consecutive time slots, hence nearby values in same one-day sub-trajectory vector, show a strong correlation in terms of locations of t user [18] [18]. In the light of these considerations, we customize the TF problem for locati inference, by introducing two additional elements to the optimization problem in
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p13]">
+            The first element emphasizes daily repetitive mobility patterns by means of Toepli matrices. Toeplitz matrices allow modelling relationships between specific elements the location tensor.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p14]">
+            towers. Instead, the solution of the enha ed TF problem in (4) returns locations whose coordinates are real values, which may no match the position of actual cellular towers.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p16]">
+            We remark that the available fine-grained ground-truth trajectories bound our validation to a two-week period. We
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p16]">
+            We en- sure that the incomplete trajectories mimic the temporal sampling properties of those extracted from CDR as follows: (i) we construct an empirical distribution of the probabil- ity that events are recorded at each time slots, based on CDR data of all 1.8 million users in our dataset; (ii) we set the desired completeness value k that shall characterize the out- put incomplete trajectory; (iii) we retain a fraction k of the overall location samples in one complete trajectory according to a random selection of time slots that follows the empirical distribution above
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p16]">
+            performance metric we adopt is cell displacement, which expresses the MAE used in (1) in terms of mobile network cells
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p17]">
+            The level of reconstruction accuracy achieved by CTR is acceptable for metropolitan- scale analyses
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p18]">
+            As a preliminary result in their analysis, Gonzalez et al. find that the travel distances and radiuses of gyration aggregated over the whole user population follow truncated power laws (x + x0)–ß e–x/k . We confirm that this is also the case under complete trajectory data, as shown in the top plots of Fig. 9. The exponent values are also consistent, as Gonzalez et al. find ßr = 1.77 and ßrg = 1.65, whereas ßr = 1.78 and ßrg = 1.68 from our complete trajectory data. However, we remark a sensible difference in the cutoff values. Travel distances can be sensibly higher in complete data; also, krg is at 400 km in [3], which is not far from the 340 km from our original
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p19]">
+            trips. Our conclusion is that, CDR data sparsity risks to both underestimate long trips, and overestimate the region within which the Lévy flight behavior of human mobility occurs.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p20]">
+            that the extremely high uniqueness identified by De Montjoye et al. is mainly caused by the diverse temporal patterns of the mobile communications of each user, rather than by his/her dis- tinctive mobility. 
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p21]">
+            The mean predictability is at 81%, which is high yet quite far from the 93% found by Song et al
+    </blockquote>
+</div>
+<div id="knapen-et-al-2018---transp-res-part-c-emerg-technol" class="section level2">
+<h2>Knapen et al 2018 - Transp Res Part C Emerg Technol</h2>
+<h3> Comments </h3> 
+ <blockquote class="comment" style="border-left-color: #eb749d;">
+            important paper on map matching, outlines the technique and state of the art etc. doesn&#39;t consider missing data and lowest density is once per 30 sec. 
+    </blockquote> <h3> Direct quotes </h3> 
+ <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p1]">
+            The technique proposed in this paper is aimed at offline (batch) map matching of GPS traces.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            Quddus et al. (2007) provide a comprehensive overview of online map matchers. 
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            Nowadays map matchers are based on the multi-hypothesis technique (MHT) about the position of the vehicle.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            Recent online map matchers, starting with Greenfeld (2002), usually incorporate topology constraints
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            Schüssler and Axhausen (2009) state that map matching of person traces requires high resolution network information
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            map matching techniques (both online and offline) are classified as (i) pure geometry based methods, (ii) topological methods, (iii) probabilistic methods and (iv) advanced procedures. Pure geometric methods are further classified by Quddus et al. (2007) as point to point matching (finding the nearest node or shape point), point to curve matching (finding the polyline to which the distance is minimal) and curve to curve matching (matching the vehicle trajectory against known roads).
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            problem of non-connected walks
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            The route candidates then are assigned a score and in order to avoid huge sets of route candidates, only the N route candidates having the best scores are kept (N = 30). Each GPS point can match at most one link in each route candidate and each link in the route needs at least one GPS fix
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            The paper concludes that the value reported in Marchal et al. (2005) is a valid one; the average score per GPS point does not significantly decrease with the candidate set size for N &gt; 30. It also reports that the processing time per point is between 10 [ms] (for N = 20) and 75 [ms] (for N = 100).
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            hou and Golledge (2006) use a similar procedure implemented in ArcGIS. GPS recordings are processed sequentially and a pool of candidate solutions is kept. In a preprocessing stage, they first replace clusters of GPS points by their centroid (cluster reduction) but also add interpolated GPS points when the distance between two consecutive points is larger than half of the minimum length for the links in the buffer defined by the two GPS points. Then a 2-norm (distance) and a rotation measure are used to determine the weight for each point in the preprocessed dataset. A set of candidate partial paths is kept and extended so that a connected walk results from the method.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            Feng and Timmermans (2013) use a Bayesian Belief Network (BBN) to replace the ad hoc rules used in map matchers not making use of the multi-hypothesis technique (MHT), to select the next road segment candidate in a route.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            Chen et al. (2011) propose a probabilistic method to simultaneously detect the road segment sequence and the transportation modes used. The likelihood that a given multi-modal path in a network generates the observed sequence of smartphone data is estimated. The measurement equations establish the probability that a given path generates a given time series of measurements.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            The methods mentioned above process the GPS points in chronological order
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            Brakatsoulas et al. (2005) propose three algorithms: (i) a greedy algorithm processing one point at a time using a distance and an angular criterion to select the next edge, (ii) a recursive local look-ahead method (inspecting up to 4 network links and GPS points ahead) and (iii) a global method that minimizes the Fréchet distance between curves
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            free space concept then is extended to free space surface in order to compare a curve C to a graph (each edge combined with C generates a free space and those are combined into a free space surface). surface). The sequence of GPS coordinates constitutes a piecewise linear curve. For a given <U+220A>, the free space surface for such curve and each path in the graph is computed.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            Wei et al. (2012) present a clear overview of the information and weight functions used in published maximal weight methods. A global method based on a hidden Markov model (HMM) and the Viterbi probability maximization is proposed.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            shortest paths are inserted to connect each link matched by the first fix to each link matched by the second fix.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            Deka and Quddus (2015) present a global method for trip based offline map matching that minimizes the additional data re- quirements like route choice, mobility patterns, etc.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            In the method presented in this paper (i) a set of multiple initial matches is allowed, (ii) outliers are processed according to the GPS device accuracy, (iii) the concept of likelihood (as opposed to weight) is used, (iv) direction is not considered and (v) a graph is build that allows for enumeration of high likelihood candidate paths for posterior application of rules based on additional as- sumption
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            If subsequent research aims to verify a particular hypothesis H to hold for W, then the map matcher shall not use any assumptions that affect the hypothesis H verification. Example: when the final result serves to assess speeding behavior the link selection stage shall not include speeding related behavior assumptions (e.g. respecting maximum speed on road segments)
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            Results of map matching are used in research projects that focus on the analysis of revealed travel behavior. In particular, researchers aim to extract properties of routes revealed by GPS traces in order to support route choice set generation (i.e. the same purpose as the one mentioned in Bierlaire et al. (2013)). This leads to the requirement to efficiently derive the route in the road network that has the highest probability to have generated the time series of GPS recordings. Such route in general corresponds to a graph theoretical walk (repeated visits of edges and vertices allowed) and not necessarily to a path (no repeated visits allowed)
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            On one hand, gap filling by means of shortest route segments in the case of missing recordings reduces the route complexity; hence it introduces bias and needs to be avoided.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            This paper proposes a map matching method based on likelihood maximization in which the requirement to have at least one GPS record for each link is relaxed.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            The road network is modeled by a directed graph G ( , ) V E T , ) V E T T T , ) V E T T T T ) V E T T T . The superscript T is used to identify the transportation graph. Each vertex v V <U+2208> T corresponds to a node in the network. Each edge e E <U+2208> T is associated to an ordered pair of nodes <v v s t ,> and identifies the set of lanes of a particular road segment usable to move from the source vs to the target vt. A bidirectional road segment is represented by two edges
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            The trace is subdivided into contiguous subtraces.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            Subgraphs for chronologically consecutive subtraces are constructed so that they are not disjoint
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            Maximum likelihood (MLH) partial routes are determined for each entry-exit combination
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
+            A new acyclic digraph is build in which each edge represents a MLH partial route.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            Each such part corresponds to a period in time (denoted by p) which is defined by the first and last recordings in the part.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            construct a graph GU in which each vertex represents the assumption that a specific link l is used in a specific period p 
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            In summary, the trace is partitioned. Each part corresponds to a time period. Each GPS record in a part matches the same set of links and these links constitute the subnetwork that is crossed during the time period. A computationally feasible method is proposed to find the maximum likelihood walks linking the entries to the exits in the subnetwork. The subnetworks then are assembled by connecting exits to entries. This results in a layering of subnetworks for which the maximum likelihood crossing walks are known. A simple recursive algorithm then is used to fine the maximum likelihood walk for the observed trace.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            The proposed method may fail if the GPS trace contains too many consecutive erroneous recordings.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            Given the accuracy threshold a and the associated probability p , we derive that the probability to find Ne consecutive erroneous recordings is given by (1 ) -p Ne
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p6]">
+            The distance d between the true position and the measured one then is given by d = + e e lon lat 2 e lon l + e e lon lat lon lat 2 lat 2 2 and has a Rayleigh distribution: d ~ Rayleigh s( ). The probability that the error is larger than d is determined as follows.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p6]">
+            We deliberately refrain from making the likelihood dependent on the speed because part of the traces are produced by vehicles in
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
+            congested traffic.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
+            because at least one correct link match is required to start the algorithm.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
+            Multiple chronologically consecutive recordings may generate the same MLS (illustrated in Fig. 1). This allows to partition the sequence of recordings into contiguous subsequences such that two chronologically consecutive recordings belong to the same part if and only if they share the MLS
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p15]">
+            Haklay et al. (2010) investigated the positional accuracy for OpenStreetMap roads in the Greater London area. 109 different roads having a total length of 328[km] were compared to their counterpart in ITN (Integrated Transport Network) maps for which it can be assumed that the error is below 1 [m]. It is concluded that if 15 contributors are active in an area, the positional error for the road is well below 6 [m]. In complete areas the average error is 9.57 [m] with a standard deviation is 6.51 [m]. In incomplete areas the average error is 11.72 [m] and the standard deviation is 7.73 [m]. Completeness is defined as ‘a measure of the lack of data’ and examined for specific areas by Haklay (2010) using visual inspection of maps and by comparing (by means of GIS) the total road length found in OSM and in reference maps respectively.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p16]">
+            accuracy based on the number of extra links - An accuracy based on the number of missed links + Ad accuracy based on the total length (distance) of the extra links - Ad accuracy based on the total length (distance) of the missed links
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p17]">
+            The maximum is taken in order to avoid negative accuracy values in cases of extremely short trips where ˜ ˜ ˜ + - |L L |L + - |L L - |L L L ˜ ˜ ˜ + - |L L L | | ˜ ˜ + - |L L L | | | | ˜ + - |L L L | | | | | 1
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p18]">
+            The accuracy value based on distance (Ad) is slightly lower for the 2 [s] recording period than for the 5 [s] recording period. The effect is less prominent for the accuracy based on the number of correctly matched links (An). It may have been caused by incorrect selection of short links in the 2 [s] case because, on average, more GPS recordings are available for each link.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p20]">
+            Processing time however heavily grows with the recording period and becomes too high. The matching radius RM is proportional to the recording period (time- space prism) and hence the SNTS grows which causes more options to be evaluated
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p20]">
+            The simple heuristic poses a problem for short trips consisting of a single link.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p20]">
+            The evaluation of these walks in GT using particular (travel behavior related) scoring functions requires a simple extension of the tool. This can be compared to the evaluation of the Fréchet distance for each path in Brakatsoulas et al. (2005).
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p21]">
+            The U-turn problem mentioned in Schüssler and Axhausen (2009) did not require any particular technique to be implemented in the proposed method
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p21]">
+            . Future research – extensions 1. Investigation of the number of near MLH sequences and of their properties is required. This includes estimating the effects on performance and accuracy of changes of the assumed global upper bound for the speed. 2. Investigation of the distribution for the results of behavior related scoring functions to the set of near MLH walks. 3. Determination and evaluation of a heuristic likelihood estimate that takes timing into account at a finer level. The current technique derives the link sequence order from topology and chronology but the GPS times are not used to determine consecutive positions on a single link. Extending the method in this way may solve the problem with single link trips mentioned in Section 5.1 item 2 but it may also improve the estimate of the likelihood and hence the accuracy of the method. 4. Computational performance for cases where the recording period is large needs to be increased.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p21]">
+            Apart from the coordinates and the order induced by the timestamps, no other information is required.
+    </blockquote>
+</div>
+<div id="li-et-al-2019---2019-12th-international-congress-on-image-and-signal-processing-biomedical-engineering-and-informatics-cisp-bmei" class="section level2">
+<h2>Li et al 2019 - 2019 12th International Congress on Image and Signal Processing BioMedical Engineering and Informatics (CISP-BMEI)</h2>
+<h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             uses a kernel method to interpolate short gaps in trajectories from both sides to the middle of the gap and runs it multiple times in order to allow the newly predicted points to impact the model. doesn&#39;t work well where transitions are not smooth. uses down sampling of the points
     </blockquote> <h3> Direct quotes </h3> 
@@ -201,13 +463,15 @@
             The basic idea of the bidirectional prediction method is that the pair of the training samples is formed by the measured data before and after the missing data segment for the kernel adaptive filter. Point-by-point prediction of missing data from forward and reverse is performed using two kernel adaptive filters. In this way, no matter from the forward prediction or the backward prediction, the time span of the missing data is half of the entire missing data segment, so the accuracy of the predicted data point can be greatly improved.
     </blockquote>
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p4]">
-            If the sample points with redundant information are down-sampling, the time interval of one step prediction can be lengthened. Let the down-sampling time is k , then the output of the prediction data point is ikt+Δ . Through the down-sampling operation, the predicted time can be lengthened to compensate for the problem of reduced accuracy of the filtered prediction output data.
+            If the sample points with redundant information are down-sampling, the time interval of one step prediction can be lengthened. Let the down-sampling time is k , then the output of the prediction data point is ikt+<U+0394> . Through the down-sampling operation, the predicted time can be lengthened to compensate for the problem of reduced accuracy of the filtered prediction output data.
     </blockquote>
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
             if the vehicle target has a significant acceleration or deceleration change in the missing data segment, causing the externally lost segment data to appear discontinuous, the performance of the filtered prediction interpolation method needs further verification.
     </blockquote>
-<h2> Tong et al 2017 - Sensors</h2> 
- <h3> Comments </h3> 
+</div>
+<div id="tong-et-al-2017---sensors" class="section level2">
+<h2>Tong et al 2017 - Sensors</h2>
+<h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             Paper discusses using fuzzy C-means clustering for evaluating the likelihood that various recorded trajectories were generated by the same underlying movement behavior. I imagine this fits into paper 3 when we evaluate filling gaps with a person&#39;s own data, but also in establishing how predictable a person&#39;s own behavior is as a metric for variance estimation. Can shed light (maybe) on between vs within person variation.
     </blockquote>
@@ -224,7 +488,7 @@
             Unfortunately, the mean absolute error (MAE) of those cubic interpolation methods exhibits a worse performance than the straight linear interpolation in most cases for the sampled station-level sparse arrival data.
     </blockquote>
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p6]">
-            G(l) =  584.2000 3 1 583.0167 7 2 584.8333 12 3  , for l = 158
+            G(l) = <U+F8EE><U+F8EF><U+F8F0> 584.2000 3 1 583.0167 7 2 584.8333 12 3 <U+F8F9><U+F8FA><U+F8FB> , for l = 158
     </blockquote>
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
             fuzzy C-means clustering (FCM) method is applied to cluster the data in G(m,l), and the trajectory fragment set is generated. T
@@ -271,8 +535,10 @@
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p25]">
             One merit of the trajectory matrix is that the traveling time set between any two stations can be easily derived by subtracting the corresponding two columns from the matrix.
     </blockquote>
-<h2> Xu et al 2021 - Ann Assoc Am Geogr</h2> 
- <h3> Comments </h3> 
+</div>
+<div id="xu-et-al-2021---ann-assoc-am-geogr" class="section level2">
+<h2>Xu et al 2021 - Ann Assoc Am Geogr</h2>
+<h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             paper gives a method for what is effectively stay point detection using CDR but importantly points out that the mobility measures are dependent on the sort of preprocessing done and the parameters selected for e.g. distance and time
     </blockquote> <h3> Direct quotes </h3> 
@@ -306,6 +572,64 @@
 <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p20]">
             that cell tower oscillations tend to be more pronounced in densely populated areas. Ignoring the uncertainty issues in the mobile phone data will have a larger impact on these areas, where decision making on urban design and manage- ment is frequently needed
     </blockquote>
+</div>
+<div id="zhao-and-zhang-2019---transp-res-part-c-emerg-technol" class="section level2">
+<h2>Zhao and Zhang 2019 - Transp Res Part C Emerg Technol</h2>
+<h3> Comments </h3> 
+ <blockquote class="comment" style="border-left-color: #eb749d;">
+            this is about using map matching from users own historic trajectories in order to fill long gaps. probably going to be one of my primary references in doing that. kinda hard to follow though
+    </blockquote> <h3> Direct quotes </h3> 
+ <blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p2]">
+            positioning errors could be larger than 2.5 m even with high-precision GPS devices (e.g., u- blox GPS modules). The missing observations, caused by the discontinuity and errors of the data, incur uncertainties and make the ). The missing observations, caused by the discontinuity and errors of the data, incur uncertainties and make the high-frequency trajectories cannot be directly used to observe individual location-duration-path choices. Methods to solve these gh-frequency trajectories cannot be directly used to observe individual location-duration-path choices. Methods to solve these uncertainties are data-driven models including machine learning and Distributionally Robust Optimization (DRO) models (e.g., DRO g machine learning and Distributionally Robust Optimization (DRO) models (e.g., DRO with moment bounds and DRO with likelihood bounds).
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            In this paper, we apply the DRO models with likelihood bounds in a data-driven optimization modeling framework to reconstruct paper, we apply the DRO models with likelihood bounds in a data-driven optimization modeling framework to reconstruct the missing location-duration-path choices using high-frequency trajectory data over many days. The raw trajectory data will be first g location-duration-path choices using high-frequency trajectory data over many days. The raw trajectory data will be first processed by a map-matching model to observe historical choices of location-duration-path. Furthermore, we can identify the missing processed by a map-matching model to observe historical choices of location-duration-path. Furthermore, we can identify the missing observations in space and time dimensions from the map-matched results. For the missing observations, we then apply data-driven pace and time dimensions from the map-matched results. For the missing observations, we then apply data-driven network-time prisms to reduce the search spaces for the potential location-duration-path choices. In the reduced search spaces, we prisms to reduce the search spaces for the potential location-duration-path choices. In the reduced search spaces, we formulate the DRO models with likelihood bounds to reconstruct the missing choices.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p3]">
+            prisms (Fig. 1(b)) to reduce the search spaces for the estimation of missing location-duration-path choices. For each individual, we can identify a network-time prism as a reduced space of potential location-duration-path choices for , we can identify a network-time prism as a reduced space of potential location-duration-path choices for a missing period. Then, two DRO models with likelihood bounds are applied to reconstruct the location-duration-path choices for the g period. Then, two DRO models with likelihood bounds are applied to reconstruct the location-duration-path choices for the missing observations. Fin
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            the many-day trajectory data, we can solve a map-matching problem to detect the locations/stays and match the paths from y-day trajectory data, we can solve a map-matching problem to detect the locations/stays and match the paths from the observed trajectories for individuals. Based on the map-matched results, we identify a set of all possible location-duration-path jectories for individuals. Based on the map-matched results, we identify a set of all possible location-duration-path choices for the missing observations for each individual.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p5]">
+            ; White et al., 2000; Chen et al., 2003; Ochieng et al., 2003; Quddus et al., 2003; Yin and Wolfson, 2004; Meng, 2006; Tang et al., 2016). We use the map-matching model from Tang et al. (2016) to match the observed trajectories to ; Meng, 2006; Tang et al., 2016). We use the map-matching model from Tang et al. (2016) to match the observed trajectories to the ground-truth network.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p6]">
+            The data-driven network-time prism is an envelope of location-duration choices and path choices for the missing observations. prism is an envelope of location-duration choices and path choices for the missing observations. The classic network-time prism estimates all reachable locations and paths considering constraints of geometry, connectivity, and speed limit geometry, connectivity, and speed limit (Miller, 1991; Tang et al., 2016). Different from the classic network-time prism, a data-driven network-time prism first peed limit (Miller, 1991; Tang et al., 2016). Different from the classic network-time prism, a data-driven network-time prism first defines a search space using the observed link travel time from many-vehicle trajectories over many days.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p7]">
+            the time budget (i.e. the time period of missing observations) for the missing observations from location sto a d ( ) ( ) is the time budget (i.e. the time period of missing observations) for the missing observations from location sto location r.
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p13]">
+            g records. Based on the calculation of path travel time from the driving records, we have two possible path choices for the inbound trip (i.e., path travel time from the driving records, we have two possible path choices for the inbound trip (i.e., trip index 0 from the observed location r in pair g records, we have two possible path choices for the inbound trip (i.e., trip index 0 from the observed location r in pair ( , ) r s to the missing location) and four possible path choices for the outbound trip p index 0 from the observed location r in pair ( , ) r s to the missing location) and four possible path choices for the outbound trip (i.e., trip index 1 from the missing location to the observed location s in pair ) and four possible path choices for the outbound trip (i.e., trip index 1 from the missing location to the observed location s in pair ( , ) r s ) in Table 3. According to the optimal solution of the (i.e., trip index 1 from the missing location to the observed location s in pair ( , ) r s ) in Table 3. According to the optimal solution of the DRO model, we derive the probabilities for all the possible path choices
+    </blockquote>
+<blockquote class="highlight" style="border-left-color: #f9e196;" pagenum="[p16]">
+            In the future, we can gher confidence level increases the probability value of the missing choice. In the future, we can apply the proposed modeling framework to a joint location-duration-path model to find the most likely location-duration-path pply the proposed modeling framework to a joint location-duration-path model to find the most likely location-duration-path choices simultaneously for the missing observations if we have long-period (e.g. over one year) high-frequency trajectory data.
+    </blockquote>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2 class="unnumbered">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Chen2019-cn" class="csl-entry">
+Chen, Guangshuo, Aline Carneiro Viana, Marco Fiore, and Carlos Sarraute. 2019. <span>“Complete Trajectory Reconstruction from Sparse Mobile Phone Data.”</span> <em>EPJ Data Science</em> 8 (1): 30. <a href="https://doi.org/10.1140/epjds/s13688-019-0206-8">https://doi.org/10.1140/epjds/s13688-019-0206-8</a>.
+</div>
+<div id="ref-Knapen2018-vd" class="csl-entry">
+Knapen, Luk, Tom Bellemans, Davy Janssens, and Geert Wets. 2018. <span>“Likelihood-Based Offline Map Matching of <span>GPS</span> Recordings Using Global Trace Information.”</span> <em>Transportation Research Part C: Emerging Technologies</em> 93: 13–35. <a href="https://doi.org/10.1016/j.trc.2018.05.014">https://doi.org/10.1016/j.trc.2018.05.014</a>.
+</div>
+<div id="ref-Li2019-bg" class="csl-entry">
+Li, Zhenxing, Shuyuan Zhao, and Dong Li. 2019. <span>“An Interpolation Method for Trajectory Measurement Missing Data Based on Bidirectional Unequal Interval Kernel Adaptive Filtering.”</span> In <em>2019 12th International Congress on Image and Signal Processing, <span>BioMedical</span> Engineering and Informatics (<span>CISP-BMEI</span>)</em>, 1–5. Suzhou, China: IEEE. <a href="https://doi.org/10.1109/CISP-BMEI48845.2019.8965696">https://doi.org/10.1109/CISP-BMEI48845.2019.8965696</a>.
+</div>
+<div id="ref-Tong2017-tc" class="csl-entry">
+Tong, Changfei, Huiling Chen, Qi Xuan, and Xuhua Yang. 2017. <span>“A Framework for Bus Trajectory Extraction and Missing Data Recovery for Data Sampled from the Internet.”</span> <em>Sensors</em> 17 (2). <a href="https://doi.org/10.3390/s17020342">https://doi.org/10.3390/s17020342</a>.
+</div>
+<div id="ref-Xu2021-yh" class="csl-entry">
+Xu, Yang, Xinyu Li, Shih-Lung Shaw, Feng Lu, Ling Yin, and Bi Yu Chen. 2021. <span>“Effects of Data Preprocessing Methods on Addressing Location Uncertainty in Mobile Signaling Data.”</span> <em>Annals of the Association of American Geographers. Association of American Geographers</em> 111 (2): 515–39. <a href="https://doi.org/10.1080/24694452.2020.1773232">https://doi.org/10.1080/24694452.2020.1773232</a>.
+</div>
+<div id="ref-Zhao2019-dl" class="csl-entry">
+Zhao, Shuaidong, and Kuilin Zhang. 2019. <span>“A Distributionally Robust Optimization Approach to Reconstructing Missing Locations and Paths Using High-Frequency Trajectory Data.”</span> <em>Transportation Research Part C: Emerging Technologies</em> 102: 316–35. <a href="https://doi.org/10.1016/j.trc.2019.03.012">https://doi.org/10.1016/j.trc.2019.03.012</a>.
+</div>
+</div>
+</div>
 
    
    
