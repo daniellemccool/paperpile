@@ -1,0 +1,16 @@
+name: Actions
+on:
+  push
+jobs:
+  deploy-web:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Push build to daniellemccool.github.io
+      uses: nkoppel/push-files-to-another-repository@v1.1.0
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-files: 'paper_3_annotations.html'
+        destination-username: 'daniellemccool'
+        destination-repository: 'daniellemccool.github.io'
+        commit-email: 'd.m.mccool@uu.nl'
