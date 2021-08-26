@@ -10,7 +10,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source-files: './paper_3_annotations.html'
+        source-files: '/paper_3_annotations.html'
         destination-username: 'daniellemccool'
         destination-repository: 'daniellemccool.github.io'
         commit-email: 'd.m.mccool@uu.nl'
