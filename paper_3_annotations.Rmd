@@ -52,7 +52,7 @@ source("json_parser.R")
 ```
 
 ```{r echo=FALSE, results='asis', warning=FALSE}
-json <- readJsonPaperpile()
+json <- readJsonPaperpile(md = TRUE)
 layoutPapersInHTML(json)
 ```
 

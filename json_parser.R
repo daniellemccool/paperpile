@@ -1,14 +1,61 @@
 # library(jsonlite)
 # library(stringr)
 
-readJsonPaperpile <- function(dir = "json"){
+# readJsonPaperpile <- function(dir = "json", md = FALSE){
+#   cur <- getwd()
+#   setwd(dir = dir)
+#   filenames <- dir(pattern = ".json")
+#   json      <- lapply(filenames, jsonlite::fromJSON)
+#   setwd(cur)
+#   sourceTitles <- stringr::str_sub(filenames, start = 15, end = -6)
+#   newNames <- sourceTitles
+#   
+#   if (isTRUE(md)) {
+#     source("md_parser.R")
+#     md <- extractTitlesFromMds()
+#     df <- lookForArticleTitles(sourceTitles, md)
+#     matchedTitles <- df[match(sourceTitles, df[, "sourceTitle"]), "articleTitle"]
+#     newNames[!is.na(matchedTitles)] <- matchedTitles[!is.na(matchedTitles)]
+#   }
+#   
+#   names(json) <- newNames
+#   json
+# }
+
+extractMetadataFromFilename <- function(filename){
+  metainfo <- unlist(strsplit(stringr::str_sub(filename, start = 15, end = -6), split = " - "))
+  pubTitle <- metainfo[2]
+  year     <- stringr::str_sub(metainfo[1], start = -4)
+  author   <- stringr::str_sub(metainfo[1], end = -6)
+  
+  list(author,
+      year,
+       pubTitle)
+}
+readJsonPaperpile <- function(dir = "json", md = FALSE){
   cur <- getwd()
-  setwd(dir = dir)
+  setwd(dir = "json")
   filenames <- dir(pattern = ".json")
-  json      <- lapply(filenames, jsonlite::fromJSON)
+  json      <- lapply(filenames, function(x){
+    metadata <- unlist(extractMetadataFromFilename(x))
+    list(data = jsonlite::fromJSON(x),
+         author = metadata[1],
+         year = metadata[2],
+         pubTitle = metadata[3],
+         sharedfilename = stringr::str_sub(x, start = 15, end = -6))
+  })
   setwd(cur)
-  paperTitles <- stringr::str_sub(filenames, start = 15, end = -6)
-  names(json) <- paperTitles
+  
+  if (isTRUE(md)) {
+    source("md_parser.R")
+    md <- extractTitlesFromMds()
+    pubTitles <- sapply(json, `[[`, "sharedfilename")
+    df <- lookForArticleTitles(pubTitles, md)
+    matchedTitles <- df[match(pubTitles, df[, "sourceTitle"]), "articleTitle"]
+    for (i in seq_along(json)) {
+      json[[i]][["articleTitle"]] <- matchedTitles[i]
+    }
+  }
   json
 }
 
@@ -41,7 +88,7 @@ layoutPaperInHTML <- function(namedPaperJson){
   headingQuotes <- "<h3> Direct quotes </h3> \n"
   
   # Shed the filename
-  paperJson <- namedPaperJson[[1]]
+  paperJson <- namedPaperJson$data
   
   # Filter for different layout type
   isComment <- paperJson[, "Subtype"] == "Comment"
@@ -62,10 +109,21 @@ layoutPaperInHTML <- function(namedPaperJson){
 
 layoutPapersInHTML <- function(jsonList){
   for (paper in seq_along(jsonList)) {
-    cat("##", names(jsonList[paper]))
-    cat(layoutPaperInHTML(jsonList[paper]))
+    # cat("##", jsonList[[paper]]$articleTitle)
+    header <- buildMarkdownHeader(jsonList[[paper]])
+    cat(header)
+    cat(layoutPaperInHTML(jsonList[[paper]]))
   }
 }
+
+buildMarkdownHeader <- function(jsonPaper){
+  title <- jsonPaper$pubTitle
+  if(!is.na(jsonPaper$articleTitle)) title <- jsonPaper$articleTitle
+  
+  sprintf("## %s (%s) - %s", jsonPaper$author, jsonPaper$year, title)
+}
+
+
 
 # generateSvgBox <- function(color) {
 #   sprintf(

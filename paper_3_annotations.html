@@ -125,12 +125,12 @@
         </ul>
         <nav role="navigation" id="toc">
           <ul>
-          <li><a href="#chen-et-al-2019---epj-data-science">Chen et al 2019 - EPJ Data Science</a></li>
-          <li><a href="#knapen-et-al-2018---transp-res-part-c-emerg-technol">Knapen et al 2018 - Transp Res Part C Emerg Technol</a></li>
-          <li><a href="#li-et-al-2019---2019-12th-international-congress-on-image-and-signal-processing-biomedical-engineering-and-informatics-cisp-bmei">Li et al 2019 - 2019 12th International Congress on Image and Signal Processing BioMedical Engineering and Informatics (CISP-BMEI)</a></li>
-          <li><a href="#tong-et-al-2017---sensors">Tong et al 2017 - Sensors</a></li>
-          <li><a href="#xu-et-al-2021---ann-assoc-am-geogr">Xu et al 2021 - Ann Assoc Am Geogr</a></li>
-          <li><a href="#zhao-and-zhang-2019---transp-res-part-c-emerg-technol">Zhao and Zhang 2019 - Transp Res Part C Emerg Technol</a></li>
+          <li><a href="#chen-et-al-2019---complete-trajectory-reconstruction-from-sparse-mobile-phone-data">Chen et al (2019) - Complete trajectory reconstruction from sparse mobile phone data</a></li>
+          <li><a href="#knapen-et-al-2018---likelihood-based-offline-map-matching-of-gps-recordings-using-global-trace-information">Knapen et al (2018) - Likelihood-based offline map matching of GPS recordings using global trace information</a></li>
+          <li><a href="#li-et-al-2019---an-interpolation-method-for-trajectory-measurement-missing-data-based-on-bidirectional-unequal-interval-kernel-adaptive-filtering">Li et al (2019) - An Interpolation Method for Trajectory Measurement Missing Data Based on Bidirectional Unequal Interval Kernel Adaptive Filtering</a></li>
+          <li><a href="#tong-et-al-2017---a-framework-for-bus-trajectory-extraction-and-missing-data-recovery-for-data-sampled-from-the-internet">Tong et al (2017) - A Framework for Bus Trajectory Extraction and Missing Data Recovery for Data Sampled from the Internet</a></li>
+          <li><a href="#xu-et-al-2021---effects-of-data-preprocessing-methods-on-addressing-location-uncertainty-in-mobile-signaling-data">Xu et al (2021) - Effects of Data Preprocessing Methods on Addressing Location Uncertainty in Mobile Signaling Data</a></li>
+          <li><a href="#zhao-and-zhang-2019---a-distributionally-robust-optimization-approach-to-reconstructing-missing-locations-and-paths-using-high-frequency-trajectory-data">Zhao and Zhang (2019) - A distributionally robust optimization approach to reconstructing missing locations and paths using high-frequency trajectory data</a></li>
           <li><a href="#references">References</a></li>
           </ul>
         </nav>
@@ -198,8 +198,8 @@
 }
 
 </style>
-<div id="chen-et-al-2019---epj-data-science" class="section level2">
-<h2>Chen et al 2019 - EPJ Data Science</h2>
+<div id="chen-et-al-2019---complete-trajectory-reconstruction-from-sparse-mobile-phone-data" class="section level2">
+<h2>Chen et al (2019) - Complete trajectory reconstruction from sparse mobile phone data</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             really important paper, may be one method of solving long gaps in paper 3. they use tensors on repeated data, so this is a way of integrating the repeatability of human mobility into the mix.
@@ -296,8 +296,8 @@
             The mean predictability is at 81%, which is high yet quite far from the 93% found by Song et al
     </blockquote>
 </div>
-<div id="knapen-et-al-2018---transp-res-part-c-emerg-technol" class="section level2">
-<h2>Knapen et al 2018 - Transp Res Part C Emerg Technol</h2>
+<div id="knapen-et-al-2018---likelihood-based-offline-map-matching-of-gps-recordings-using-global-trace-information" class="section level2">
+<h2>Knapen et al (2018) - Likelihood-based offline map matching of GPS recordings using global trace information</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             important paper on map matching, outlines the technique and state of the art etc. doesn&#39;t consider missing data and lowest density is once per 30 sec. 
@@ -447,8 +447,8 @@
             Apart from the coordinates and the order induced by the timestamps, no other information is required.
     </blockquote>
 </div>
-<div id="li-et-al-2019---2019-12th-international-congress-on-image-and-signal-processing-biomedical-engineering-and-informatics-cisp-bmei" class="section level2">
-<h2>Li et al 2019 - 2019 12th International Congress on Image and Signal Processing BioMedical Engineering and Informatics (CISP-BMEI)</h2>
+<div id="li-et-al-2019---an-interpolation-method-for-trajectory-measurement-missing-data-based-on-bidirectional-unequal-interval-kernel-adaptive-filtering" class="section level2">
+<h2>Li et al (2019) - An Interpolation Method for Trajectory Measurement Missing Data Based on Bidirectional Unequal Interval Kernel Adaptive Filtering</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             uses a kernel method to interpolate short gaps in trajectories from both sides to the middle of the gap and runs it multiple times in order to allow the newly predicted points to impact the model. doesn&#39;t work well where transitions are not smooth. uses down sampling of the points
@@ -469,8 +469,8 @@
             if the vehicle target has a significant acceleration or deceleration change in the missing data segment, causing the externally lost segment data to appear discontinuous, the performance of the filtered prediction interpolation method needs further verification.
     </blockquote>
 </div>
-<div id="tong-et-al-2017---sensors" class="section level2">
-<h2>Tong et al 2017 - Sensors</h2>
+<div id="tong-et-al-2017---a-framework-for-bus-trajectory-extraction-and-missing-data-recovery-for-data-sampled-from-the-internet" class="section level2">
+<h2>Tong et al (2017) - A Framework for Bus Trajectory Extraction and Missing Data Recovery for Data Sampled from the Internet</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             Paper discusses using fuzzy C-means clustering for evaluating the likelihood that various recorded trajectories were generated by the same underlying movement behavior. I imagine this fits into paper 3 when we evaluate filling gaps with a person&#39;s own data, but also in establishing how predictable a person&#39;s own behavior is as a metric for variance estimation. Can shed light (maybe) on between vs within person variation.
@@ -536,8 +536,8 @@
             One merit of the trajectory matrix is that the traveling time set between any two stations can be easily derived by subtracting the corresponding two columns from the matrix.
     </blockquote>
 </div>
-<div id="xu-et-al-2021---ann-assoc-am-geogr" class="section level2">
-<h2>Xu et al 2021 - Ann Assoc Am Geogr</h2>
+<div id="xu-et-al-2021---effects-of-data-preprocessing-methods-on-addressing-location-uncertainty-in-mobile-signaling-data" class="section level2">
+<h2>Xu et al (2021) - Effects of Data Preprocessing Methods on Addressing Location Uncertainty in Mobile Signaling Data</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             paper gives a method for what is effectively stay point detection using CDR but importantly points out that the mobility measures are dependent on the sort of preprocessing done and the parameters selected for e.g. distance and time
@@ -573,8 +573,8 @@
             that cell tower oscillations tend to be more pronounced in densely populated areas. Ignoring the uncertainty issues in the mobile phone data will have a larger impact on these areas, where decision making on urban design and manage- ment is frequently needed
     </blockquote>
 </div>
-<div id="zhao-and-zhang-2019---transp-res-part-c-emerg-technol" class="section level2">
-<h2>Zhao and Zhang 2019 - Transp Res Part C Emerg Technol</h2>
+<div id="zhao-and-zhang-2019---a-distributionally-robust-optimization-approach-to-reconstructing-missing-locations-and-paths-using-high-frequency-trajectory-data" class="section level2">
+<h2>Zhao and Zhang (2019) - A distributionally robust optimization approach to reconstructing missing locations and paths using high-frequency trajectory data</h2>
 <h3> Comments </h3> 
  <blockquote class="comment" style="border-left-color: #eb749d;">
             this is about using map matching from users own historic trajectories in order to fill long gaps. probably going to be one of my primary references in doing that. kinda hard to follow though
