@@ -1,0 +1,159 @@
+[
+  {
+    "Subtype": "Comment",
+    "PageNumber": 1,
+    "VerticalPosition": 594.1,
+    "Text": "compares performance of multiple imputation methods on time series data with long time gaps. not explicitly gps, but useful because the method is explicitly for low correlation situations. maybe good for long gaps when individuals don't really have much own data",
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629987798000,
+    "Color": "#eb749d",
+    "id": "d5e4d6cd-2779-4712-9d17-3409ce2864b0"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "imperfect time series can be modelled using fuzzy sets.",
+    "PageNumber": 2,
+    "VerticalPosition": 612.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986130000,
+    "Color": "#f9e196",
+    "id": "9a98c7e5-620e-40fb-854a-878675cff4d3"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The objective of this study is to fill large missing values in uncorrelated multivariate time series",
+    "PageNumber": 2,
+    "VerticalPosition": 157.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986278000,
+    "Color": "#f9e196",
+    "id": "cd8bb5b7-c2dd-445b-aec7-76d24e37ab30"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "This method makes it possible to build a new hybrid similarity measure for finding similar values between subsequences of time series.",
+    "PageNumber": 3,
+    "VerticalPosition": 601.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986524000,
+    "Color": "#f9e196",
+    "id": "40988868-b35f-4639-a25b-e84d6b0cd95f"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The proposed imputation method is based on the retrieval and the similarity comparison of available subsequences.",
+    "PageNumber": 3,
+    "VerticalPosition": 534.5,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986530000,
+    "Color": "#f9e196",
+    "id": "f9efaa79-886f-41c3-be15-9ab1972c6884"
+  },
+  {
+    "Subtype": "Ink",
+    "PageNumber": 4,
+    "VerticalPosition": 729.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986627000,
+    "Color": "#000000",
+    "id": "db9d5bde-6e74-4fc1-96a7-7b85e7c58e9e"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": ". A 𝑇-gap is large when the duration 𝑇 is longer than known change process.",
+    "PageNumber": 4,
+    "VerticalPosition": 385,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986663000,
+    "Color": "#f9e196",
+    "id": "908a97f1-0030-468a-a915-bb0b4fc229aa"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Further, an important point of our approach is that each incomplete signal is processed as two separated time series, one time series before the considered gap and one time series after this gap",
+    "PageNumber": 4,
+    "VerticalPosition": 112.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986714000,
+    "Color": "#f9e196",
+    "id": "2e5eb9c8-639d-41c9-8b48-0733ea1a96e6"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "In the proposed approach, the dynamics and the shape of data before and after a gap are a key-point of our method.",
+    "PageNumber": 5,
+    "VerticalPosition": 100.8,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986754000,
+    "Color": "#f9e196",
+    "id": "576343ad-16d5-4614-a89a-310804986efa"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Amelia II (Amelia II R-package) [57]: The algorithm uses the familiar expectation-maximization algo- rithm on multiple bootstrapped samples of the orig- inal incomplete data to draw values of the complete data parameters. The algorithm then draws imputed values from each set of bootstrapped parameters, replacing the missing values with the drawn values.",
+    "PageNumber": 7,
+    "VerticalPosition": 649.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986805000,
+    "Color": "#f9e196",
+    "id": "5ad85f13-995d-41c2-8192-3283bafa4dc8"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "DTWUMI [62]: For each gap, this approach finds the most similar window to the subsequence after (resp. before) the gap based on the combination of shape- features extraction and Dynamic Time Warping algo- rithms. Then, the previous (resp. following) window of the most similar one in the incomplete signal is used to complete the gap.",
+    "PageNumber": 7,
+    "VerticalPosition": 180.4,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986853000,
+    "Color": "#f9e196",
+    "id": "92f0313f-8c47-416d-ac8c-c4075bde6818"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "The results clearly show that when a gap size is greater than 2%, the proposed method yields the gap size is greater than 2%, the proposed method yields the highest similarity, 𝑅2, FA2, and the lowest RMSE, FB.",
+    "PageNumber": 8,
+    "VerticalPosition": 218,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629986913000,
+    "Color": "#f9e196",
+    "id": "37ab38fb-4b42-4754-be88-308f032e979a"
+  },
+  {
+    "Subtype": "Ink",
+    "PageNumber": 9,
+    "VerticalPosition": 170.1,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629987042000,
+    "Color": "#000000",
+    "id": "04ef904b-0f24-4502-af81-930aafbfb2b3"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "In contrast to the two datasets above, on the MAREL- Carnot data, na.approx indicates quite good results: the permanent second or third rank for the accuracy indices (the permanent second or third rank for the accuracy indices (the 1𝑠𝑡 order at 5% missing rate on 𝑅2 score), the lowest FSD (from 3% to 5% missing rates), and FB at some other levels of missing data. But when looking at the shape of imputation values generated from this method, it absolutely gives the worst results (Figure 6).",
+    "PageNumber": 12,
+    "VerticalPosition": 242.7,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629987359000,
+    "Color": "#f9e196",
+    "id": "911512fb-ba00-4246-8da4-b8b2cacf672c"
+  },
+  {
+    "Subtype": "Highlight",
+    "MarkupText": "Other approaches (including FcM-based imputation, MI, MICE, Amelia, and missForest) exploit the relations between attributes to estimate missing values. However, three con- sidered datasets have low correlations between variables (roundly 0.2 for MAREL-Carnot data, ≤ 0.1 for simulated and synthetic datasets). So these methods do not demon- strate their performance for completing missing values in low/uncorrelated multivariate time series.",
+    "PageNumber": 12,
+    "VerticalPosition": 147.6,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629987387000,
+    "Color": "#f9e196",
+    "id": "16896b84-c703-44e6-bd03-a8515166621f"
+  },
+  {
+    "Subtype": "Ink",
+    "PageNumber": 12,
+    "VerticalPosition": 741.2,
+    "Author": "Danielle McCool",
+    "ModificationDate": 1629987450000,
+    "Color": "#000000",
+    "id": "9ab2a3f3-728a-47bf-a8d3-e1af02c028e8"
+  }
+]
